@@ -42,3 +42,14 @@ $free:=$values{Find in array($names;"Free stack memory")}/(1 << 10)
 **注記**: 初期の4Dマニュアルには``16*1024``あるいは``32*1024**といった例題が掲載されていました。これは，当時のスペックを考慮したスタックサイズであり，ほとんどの場合，現在のオペレーションシステムでは足りないかもしれません。
 
 サーバー側プロセスのスタックサイズが指定できるのは[Execute on server ()](http://doc.4d.com/4Dv16/4D/16.3/Execute-on-server.301-3651704.ja.html)だけです。[サーバー上で実行](http://doc.4d.com/4Dv16/4D/16/Execute-on-Server-attribute.300-3047542.ja.html)メソッドプロパティ，および[実行モード: 4D Server上](http://doc.4d.com/4Dv16R4/4D/16-R4/Executing-methods.300-3330269.ja.html)オプションは，実験してみると，それぞれデフォルトのスタックサイズ（``552``KB）に固定されていることがわかります。
+
+サーバー側プロセスのスタックサイズが足りないようであれば，下記の対策を講じる必要があるかもしれません。
+
+* [Execute on server ()](http://doc.4d.com/4Dv16/4D/16.3/Execute-on-server.301-3651704.ja.html)を使用する
+
+* サーバー側で[New process ()](http://doc.4d.com/4Dv16/4D/16.3/New-process.301-3651687.ja.html)を使用する
+
+* 過剰なメソッド連鎖を減らす
+
+* おおきなBLOB引数の安易な代入を避ける
+
