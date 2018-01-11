@@ -53,3 +53,4 @@ $free:=$values{Find in array($names;"Free stack memory")}/(1 << 10)
 
 * おおきなBLOB引数の安易な代入を避ける
 
+
