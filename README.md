@@ -88,3 +88,11 @@ $free:=$values{Find in array($names;"Free stack memory")}/(1 << 10)
 * クライアント側でクエリを実行すれば，サーバー側のトリガプロセスではなく，プリエンプティブスレッドが呼ばれるので，サーバー上で実行されている他のプロセスと並行して処理が進められる。また，必要であれば，スタックサイズを増減できる。しかし，何度も続けてクエリを実行していると，ネットワークがボトルネックになってしまう可能性がある。
 
 * クライアント側で作成したプロセスセットおよびプロセス命名セレクションは，サーバー上で実行メソッドプロセスでそのまま使用することができる。この特性と[SET QUERY DESTINATION](http://doc.4d.com/4Dv16/4D/16.3/SET-QUERY-DESTINATION.301-3651871.ja.html)をうまく活用すれば，セレクションの転送等にスタックサイズを使用しなくても済む。
+
+#### 関連資料
+
+[正しいクエリの書き⽅](https://www.slideshare.net/kmiyako/query-optimisation-48925290)  
+[4D v11 SQL in-depth](https://www.slideshare.net/kmiyako/2010-indepthv11)  
+[セットとセレクション](https://www.slideshare.net/kmiyako/set-andselection-20130514)
+
+
