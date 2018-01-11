@@ -6,6 +6,6 @@
 
 4D Serverには，メソッドをサーバー側で実行する方法が幾つか用意されています。
 
-1. 「[サーバー側で実行](http://doc.4d.com/4Dv16/4D/16/Execute-on-Server-attribute.300-3047542.ja.html)」メソッドプロパティ]
+1. 「[サーバー上で実行](http://doc.4d.com/4Dv16/4D/16/Execute-on-Server-attribute.300-3047542.ja.html)」メソッドプロパティ
 1. [Execute on server()](http://doc.4d.com/4Dv16/4D/16.2/Execute-on-server.301-3433448.ja.html)
 1. 「[サーバー側で実行](http://doc.4d.com/4Dv16R4/4D/16-R4/Executing-methods.300-3330269.ja.html)」オプション（デザインモード > 実行 > メソッド）
