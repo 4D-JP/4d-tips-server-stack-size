@@ -37,7 +37,7 @@ $total:=$values{Find in array($names;"Stack memory")}/(1 << 10)
 $free:=$values{Find in array($names;"Free stack memory")}/(1 << 10)
 ```
 
-通常，スタックサイズを明示的に指定する必要はありません。[Execute on server ()](http://doc.4d.com/4Dv16/4D/16.3/Execute-on-server.301-3651704.ja.html)および[New process ()](http://doc.4d.com/4Dv16/4D/16.3/New-process.301-3651687.ja.html)は，スタックサイズに``0``を指定すれば，自動的にプラットフォームの推奨スタックサイズ（Windows 10であれば``565,248``）を採用するようになっています。
+通常，スタックサイズを明示的に指定する必要はありません。[Execute on server ()](http://doc.4d.com/4Dv16/4D/16.3/Execute-on-server.301-3651704.ja.html)および[New process ()](http://doc.4d.com/4Dv16/4D/16.3/New-process.301-3651687.ja.html)は，スタックサイズに``0``を指定すれば，自動的にプラットフォームの推奨スタックサイズ（Windows 10であれば``565,248``）が採用されるようになっています。
 
 **注記**: 初期の4Dマニュアルには``16*1024``あるいは``32*1024``といった例題が掲載されていました。これは，当時のマシンスペックを考慮したスタックサイズであり，現在のオペレーションシステムでは，特殊な場合を除き，実際的な値ではないことに留意する必要があります。
 
