@@ -27,3 +27,13 @@
 * メソッド連鎖（ローカル変数・引数・プラグインコール）
 
 **多重サブルーチンコール**や**再帰的メソッドコール**は，スタックを多く使用します。BLOBは参照カウントされないため，サイズのおおきな**BLOB引数**の受け渡しはスタックを余分に消費します。テキスト・ピクチャ・オブジェクト・コレクションは参照カウントされるので，スタックサイズを節約するためにポインター引数を経由する必要はありません。
+
+プロセスの合計スタックサイズ，およびフリースタックサイズは[GET MEMORY STATISTICS](http://doc.4d.com/4Dv16R4/4D/16-R4/GET-MEMORY-STATISTICS.301-3318258.ja.html)で調べることができます。
+
+```
+GET MEMORY STATISTICS(1;$names;$values;$count)
+
+$total:=$values{Find in array($names;"Stack memory")}/(1 << 10)
+$free:=$values{Find in array($names;"Free stack memory")}/(1 << 10)
+```
+
